@@ -1,4 +1,5 @@
-export default function orderByProps(obj, features) {
+export default function orderByProps(object, features) {
+  const obj = { ...object };
   const result = [];
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < Object.keys(obj).length; i++) {
